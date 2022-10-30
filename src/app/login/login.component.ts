@@ -10,14 +10,14 @@ export class LoginComponent implements OnInit {
 
   constructor(private myRouter:Router) { }
 
-  email=""
+  username=""
   password=""
   readValue=()=>{
     let data={
-      "email":this.email,
+      "email":this.username,
       "password":this.password
     }
-    if(this.email=="admin" && this.password=="admin"){
+    if(this.username=="admin" && this.password=="admin"){
       this.myRouter.navigate(["/adminDashbord"])
     }
     else{
