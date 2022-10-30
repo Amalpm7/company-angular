@@ -14,6 +14,7 @@ import { AdminnavbarComponent } from './adminnavbar/adminnavbar.component';
 import { HttpClientModule } from "@angular/common/http";
 import { ViewemployeeComponent } from './viewemployee/viewemployee.component';
 import { SearchemployeeComponent } from './searchemployee/searchemployee.component';
+import { AddsecurityComponent } from './addsecurity/addsecurity.component';
 
 const appRoutes:Routes=[
   {
@@ -33,6 +34,9 @@ const appRoutes:Routes=[
   },
   {
     path:"searchemp",component:SearchemployeeComponent
+  },
+  {
+    path:"addsec",component:AddsecurityComponent
   }
 ]
 @NgModule({
@@ -45,7 +49,8 @@ const appRoutes:Routes=[
     AdmindashboardComponent,
     AdminnavbarComponent,
     ViewemployeeComponent,
-    SearchemployeeComponent
+    SearchemployeeComponent,
+    AddsecurityComponent
   ],
   imports: [
     BrowserModule,

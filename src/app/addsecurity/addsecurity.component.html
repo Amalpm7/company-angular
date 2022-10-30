@@ -1,0 +1,42 @@
+<app-adminnavbar></app-adminnavbar>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3">
+                <div class="col col-12 col sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="">Name</label>
+                    <input type="text" class="form-control" name="name" [(ngModel)]="name">
+                </div>
+                <div class="col col-12 col sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="">Age</label>
+                    <input type="text" class="form-control" name="Age" [(ngModel)]="Age">
+                </div>
+                <div class="col col-12 col sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="">Address</label>
+                    <textarea name="Address" id="" cols="30" rows="10" class="form-control"[(ngModel)]="Address"></textarea>
+                </div>
+                <div class="col col-12 col sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="">Salary</label>
+                    <input type="text" class="form-control" name="Salary" [(ngModel)]="Salary">
+                </div>
+               
+                <div class="col col-12 col sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="">Phone</label>
+                    <input type="text" class="form-control" name="Phone" [(ngModel)]="Phone">
+                </div>
+                <div class="col col-12 col sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="">Email</label>
+                    <input type="text" class="form-control" name="email" [(ngModel)]="email">
+                </div>
+                <div class="col col-12 col sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="">Password</label>
+                    <input type="password" name="password" id="" class="form-control" [(ngModel)]="password">
+                </div>
+                <div class="col col-12 col sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <button class="btn btn-success" (click)="readValue()">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
