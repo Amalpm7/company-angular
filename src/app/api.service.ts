@@ -39,5 +39,11 @@ export class ApiService {
   viewSecurity=()=>{
     return this.http.get("http://localhost:8080/viewSecurity")
   }
+  leaveStatus=(data:any)=>{
+    return this.http.post("http://localhost:8080/leaveStatus",data)
+  }
+  viewLeave=()=>{
+    return this.http.get("http://localhost:8080/viewAllLeaves")
+  }
   
 }
