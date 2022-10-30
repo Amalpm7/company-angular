@@ -18,6 +18,7 @@ import { AddsecurityComponent } from './addsecurity/addsecurity.component';
 import { ViewsecurityComponent } from './viewsecurity/viewsecurity.component';
 import { SearchsecurityComponent } from './searchsecurity/searchsecurity.component';
 import { LeavemanageComponent } from './leavemanage/leavemanage.component';
+import { LogComponent } from './log/log.component';
 
 const appRoutes:Routes=[
   {
@@ -49,6 +50,9 @@ const appRoutes:Routes=[
   },
   {
     path:"leavemanage",component:LeavemanageComponent
+  },
+  {
+    path:"log",component:LogComponent
   }
 ]
 @NgModule({
@@ -65,7 +69,8 @@ const appRoutes:Routes=[
     AddsecurityComponent,
     ViewsecurityComponent,
     SearchsecurityComponent,
-    LeavemanageComponent
+    LeavemanageComponent,
+    LogComponent
   ],
   imports: [
     BrowserModule,

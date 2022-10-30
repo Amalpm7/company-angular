@@ -45,5 +45,8 @@ export class ApiService {
   viewLeave=()=>{
     return this.http.get("http://localhost:8080/viewAllLeaves")
   }
+  viewLog=()=>{
+    return this.http.get("http://localhost:8080/viewAllLog")
+  }
   
 }
