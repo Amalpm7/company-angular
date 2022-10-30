@@ -16,6 +16,7 @@ import { ViewemployeeComponent } from './viewemployee/viewemployee.component';
 import { SearchemployeeComponent } from './searchemployee/searchemployee.component';
 import { AddsecurityComponent } from './addsecurity/addsecurity.component';
 import { ViewsecurityComponent } from './viewsecurity/viewsecurity.component';
+import { SearchsecurityComponent } from './searchsecurity/searchsecurity.component';
 
 const appRoutes:Routes=[
   {
@@ -41,7 +42,11 @@ const appRoutes:Routes=[
   },
   {
     path:"viewsec",component:ViewsecurityComponent
-  }
+  },
+  {
+    path:"searchsec",component:SearchsecurityComponent
+  },
+
 ]
 @NgModule({
   declarations: [
@@ -55,7 +60,8 @@ const appRoutes:Routes=[
     ViewemployeeComponent,
     SearchemployeeComponent,
     AddsecurityComponent,
-    ViewsecurityComponent
+    ViewsecurityComponent,
+    SearchsecurityComponent
   ],
   imports: [
     BrowserModule,
