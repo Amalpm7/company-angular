@@ -11,6 +11,14 @@ import { EmployLoginComponent } from './employ-login/employ-login.component';
 import { SecurityLoginComponent } from './security-login/security-login.component';
 import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
 import { AdminnavbarComponent } from './adminnavbar/adminnavbar.component';
+import { HttpClientModule } from "@angular/common/http";
+import { ViewemployeeComponent } from './viewemployee/viewemployee.component';
+import { SearchemployeeComponent } from './searchemployee/searchemployee.component';
+import { AddsecurityComponent } from './addsecurity/addsecurity.component';
+import { ViewsecurityComponent } from './viewsecurity/viewsecurity.component';
+import { SearchsecurityComponent } from './searchsecurity/searchsecurity.component';
+import { LeavemanageComponent } from './leavemanage/leavemanage.component';
+import { LogComponent } from './log/log.component';
 
 const appRoutes:Routes=[
   {
@@ -24,6 +32,27 @@ const appRoutes:Routes=[
   },
   {
     path:"adminDashbord",component:AdmindashboardComponent
+  },
+  {
+    path:"viewemp",component:ViewemployeeComponent
+  },
+  {
+    path:"searchemp",component:SearchemployeeComponent
+  },
+  {
+    path:"addsec",component:AddsecurityComponent
+  },
+  {
+    path:"viewsec",component:ViewsecurityComponent
+  },
+  {
+    path:"searchsec",component:SearchsecurityComponent
+  },
+  {
+    path:"leavemanage",component:LeavemanageComponent
+  },
+  {
+    path:"log",component:LogComponent
   }
 ]
 @NgModule({
@@ -34,13 +63,21 @@ const appRoutes:Routes=[
     EmployLoginComponent,
     SecurityLoginComponent,
     AdmindashboardComponent,
-    AdminnavbarComponent
+    AdminnavbarComponent,
+    ViewemployeeComponent,
+    SearchemployeeComponent,
+    AddsecurityComponent,
+    ViewsecurityComponent,
+    SearchsecurityComponent,
+    LeavemanageComponent,
+    LogComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

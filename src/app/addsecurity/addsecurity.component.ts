@@ -2,12 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../api.service';
 
 @Component({
-  selector: 'app-admindashboard',
-  templateUrl: './admindashboard.component.html',
-  styleUrls: ['./admindashboard.component.css']
+  selector: 'app-addsecurity',
+  templateUrl: './addsecurity.component.html',
+  styleUrls: ['./addsecurity.component.css']
 })
-export class AdmindashboardComponent implements OnInit {
+export class AddsecurityComponent implements OnInit {
 
+  
   constructor(private myapi:ApiService) { }
 
   name=""
@@ -29,11 +30,11 @@ export class AdmindashboardComponent implements OnInit {
       "password":this.password
 
     }
-    this.myapi.addEmploy(data).subscribe(
-
+    this.myapi.addSecurity(data).subscribe(
+      
     )
-    alert("Added Succesfully")
   }
+
   ngOnInit(): void {
   }
 
