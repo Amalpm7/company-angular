@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-admindashboard',
@@ -7,13 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdmindashboardComponent implements OnInit {
 
-  constructor() { }
+  constructor(private myapi:ApiService) { }
 
   name=""
   Age=""
   Address=""
   Salary=""
-  Date=""
   Phone=""
   email=""
   password=""
@@ -24,12 +24,15 @@ export class AdmindashboardComponent implements OnInit {
       "age":this.Age,
       "address":this.Address,
       "salary":this.Salary,
-      "date":this.Date,
       "phone":this.Phone,
       "email":this.email,
       "password":this.password
 
     }
+    this.myapi.addEmploy(data).subscribe(
+
+    )
+    alert("Added Succesfully")
   }
   ngOnInit(): void {
   }

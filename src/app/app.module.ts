@@ -11,6 +11,7 @@ import { EmployLoginComponent } from './employ-login/employ-login.component';
 import { SecurityLoginComponent } from './security-login/security-login.component';
 import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
 import { AdminnavbarComponent } from './adminnavbar/adminnavbar.component';
+import { HttpClientModule } from "@angular/common/http";
 
 const appRoutes:Routes=[
   {
@@ -40,7 +41,8 @@ const appRoutes:Routes=[
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
