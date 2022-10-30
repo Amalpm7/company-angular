@@ -17,6 +17,16 @@ export class ViewemployeeComponent implements OnInit {
       }
     )
   }
+  deleteValue=(id:any)=>{
+    let data={
+      "id":id
+    }
+    this.myapi.deleteEmploy(data).subscribe(
+      
+    )
+    alert("Deleted Succesfully")
+    this.view()
+  }
   empData:any=[]
   ngOnInit(): void {
   }

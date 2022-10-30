@@ -16,6 +16,7 @@
                         <th scope="col">Phone</th>
                         <th scope="col">Email</th>
                         <th scope="col">Password</th>
+                        <th scope="col">Delete</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -30,6 +31,7 @@
                         <td>{{i.phone}}</td>
                         <td>{{i.email}}</td>
                         <td>{{i.password}}</td>
+                        <td><button class="btn btn-danger " (click)="deleteValue(i.id)">Delete</button></td>
                       </tr>
                      
                      
