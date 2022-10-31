@@ -48,5 +48,7 @@ export class ApiService {
   viewLog=()=>{
     return this.http.get("http://localhost:8080/viewAllLog")
   }
-  
+  employLogin=(data:any)=>{
+    return this.http.post("http://localhost:8080/authEmp",data)
+  }
 }
