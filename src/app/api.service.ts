@@ -51,4 +51,7 @@ export class ApiService {
   employLogin=(data:any)=>{
     return this.http.post("http://localhost:8080/authEmp",data)
   }
+  applyLeave=(data:any)=>{
+    return this.http.post("http://localhost:8080/applyLeave",data)
+  }
 }
