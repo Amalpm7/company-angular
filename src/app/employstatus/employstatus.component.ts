@@ -19,8 +19,8 @@ export class EmploystatusComponent implements OnInit {
     console.log(data)
     return this.myapi.employStatus(data).subscribe(
       (resp)=>{
-        console.log(resp)
-        console.log("success")
+        // console.log(resp)
+        // console.log("success")
         this.viewStatus=resp
         
       }

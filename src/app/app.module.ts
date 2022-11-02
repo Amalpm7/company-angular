@@ -22,6 +22,7 @@ import { LogComponent } from './log/log.component';
 import { EmployComponent } from './employ/employ.component';
 import { EmploynavbarComponent } from './employnavbar/employnavbar.component';
 import { EmploystatusComponent } from './employstatus/employstatus.component';
+import { EmploylogComponent } from './employlog/employlog.component';
 
 
 const appRoutes:Routes=[
@@ -63,6 +64,9 @@ const appRoutes:Routes=[
   },
   {
     path:"viewleave",component:EmploystatusComponent
+  },
+  {
+    path:"viewlog",component:EmploylogComponent
   }
 ]
 @NgModule({
@@ -84,6 +88,7 @@ const appRoutes:Routes=[
     EmployComponent,
     EmploynavbarComponent,
     EmploystatusComponent,
+    EmploylogComponent,
     
   ],
   imports: [
