@@ -21,6 +21,7 @@ import { LeavemanageComponent } from './leavemanage/leavemanage.component';
 import { LogComponent } from './log/log.component';
 import { EmployComponent } from './employ/employ.component';
 import { EmploynavbarComponent } from './employnavbar/employnavbar.component';
+import { EmploystatusComponent } from './employstatus/employstatus.component';
 
 
 const appRoutes:Routes=[
@@ -59,6 +60,9 @@ const appRoutes:Routes=[
   },
   {
     path:"employ",component:EmployComponent
+  },
+  {
+    path:"viewleave",component:EmploystatusComponent
   }
 ]
 @NgModule({
@@ -79,6 +83,7 @@ const appRoutes:Routes=[
     LogComponent,
     EmployComponent,
     EmploynavbarComponent,
+    EmploystatusComponent,
     
   ],
   imports: [
