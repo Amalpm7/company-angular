@@ -1,0 +1,36 @@
+<app-employnavbar></app-employnavbar>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+
+            <div class="row g-3">
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="">Type of Leave</label>
+                    <select name="type" id="" class="form-control"[(ngModel)]="type">
+                        <option value="type" class="input form-control">Select</option>
+                    <option value="Privilege Leave" class="input form-control">Privilege Leave</option>
+                    <option value="Casual Leave" class="input form-control">Casual Leave</option>
+                    <option value="Sick Leave" class="input form-control">Sick Leave</option>
+                    <option value="Marriage Leave" class="input form-control">Marriage Leave.</option>
+                    <option value="Paternity Leave." class="input form-control">Paternity Leave.</option>
+                        </select>
+                </div>
+                <!-- <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="">Employ Id</label>
+                  <input type="text" name="emp_id" id="" class="form-control" [(ngModel)]="emp_id">
+                </div> -->
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="">Description</label>
+                   <textarea name="description" id="" cols="30" rows="10" class="form-control"[(ngModel)]="description"></textarea>
+                </div>
+                <label for="">Leave Date</label>
+                  <input type="date" name="leaveDate" id="" class="form-control" [(ngModel)]="leaveDate">
+
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                   <button class="btn btn-primary" (click)="readValue()">Apply</button>
+                 </div>
+            </div>
+        </div>
+    </div>
+</div>
