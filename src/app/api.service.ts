@@ -60,4 +60,16 @@ export class ApiService {
   employLog=(data:any)=>{
     return this.http.post("http://localhost:8080/viewLogById",data)
   }
+  securityLogin=(data:any)=>{
+    return this.http.post("http://localhost:8080/authSecurity",data)
+  }
+  checkIn=(data:any)=>{
+    return this.http.post("http://localhost:8080/login",data)
+  }
+  viewCeckIn=()=>{
+    return this.http.get("http://localhost:8080/viewCheckin")
+  }
+  checkOut=(data:any)=>{
+    return this.http.post("http://localhost:8080/checkOut",data)
+  }
 }
