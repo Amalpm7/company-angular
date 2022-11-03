@@ -23,6 +23,9 @@ import { EmployComponent } from './employ/employ.component';
 import { EmploynavbarComponent } from './employnavbar/employnavbar.component';
 import { EmploystatusComponent } from './employstatus/employstatus.component';
 import { EmploylogComponent } from './employlog/employlog.component';
+import { SecuritynavbarComponent } from './securitynavbar/securitynavbar.component';
+import { SecuritycheckinComponent } from './securitycheckin/securitycheckin.component';
+import { SecuritycheckoutComponent } from './securitycheckout/securitycheckout.component';
 
 
 const appRoutes:Routes=[
@@ -67,6 +70,12 @@ const appRoutes:Routes=[
   },
   {
     path:"viewlog",component:EmploylogComponent
+  },
+  {
+    path:"checkin",component:SecuritycheckinComponent
+  },
+  {
+    path:"checkout",component:SecuritycheckoutComponent
   }
 ]
 @NgModule({
@@ -89,6 +98,9 @@ const appRoutes:Routes=[
     EmploynavbarComponent,
     EmploystatusComponent,
     EmploylogComponent,
+    SecuritynavbarComponent,
+    SecuritycheckinComponent,
+    SecuritycheckoutComponent,
     
   ],
   imports: [
